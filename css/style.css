@@ -1,0 +1,346 @@
+/*全站通用設定*/
+header, nav, main, aside, section, footer, div {box-sizing: border-box; overflow: hidden;}    
+body {margin: 0; font-family: 'cwTeXYen', sans-serif; }
+
+
+/*手機版設定開始*/
+@media only screen and (max-width: 1179px) {
+
+.hidden {overflow: hidden;}
+/*製作外圍包覆用的區塊，讓版面可以固定寬度跟居中*/
+
+header {
+    width: 100%;/*手機版將寬度改為100%*/ 
+    margin: 0;
+}
+    
+/*設定LOGO*/
+nav img.logo{
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+}
+    
+/*設定Header區塊*/   
+/*設定Nav瀏覽選單*/
+nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+}
+    
+nav li {float: none;/*手機板不須偏移*/} 
+    
+nav img{
+    float: right;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+img.banner-pic{
+    max-height: 100%;  
+    max-width: 100%; 
+    margin: 0;
+}
+
+
+/*設定Main區塊*/
+main img{
+    width: 0%;
+    height: 0%;
+}
+
+aside h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Baloo 2', cursive;
+}
+
+aside p.introduce{
+    margin: 0;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;  
+}
+    
+aside p.price{
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px; 
+}
+
+h4.album {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;    
+}
+    
+/*設定Section區塊*/  
+h4.photos {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px; 
+    font-family: 'Baloo 2', cursive;
+}
+    
+/*設定Section 1區塊*/
+img.pic1 {
+    width: 100%;
+    height: 100%;
+}
+
+div.sec1 {
+    margin-top: 15px;
+    text-align: center;     
+}
+
+img.pic2{
+    margin-top: 25px;
+}
+    
+img.pic3{
+    margin-top: 15px;
+    margin-right: 4px;
+}
+
+/*設定Section 2區塊*/
+
+  
+    
+/*設定Footer區塊*/
+footer {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 50px; 
+    color: darkgray;
+    font-size: 14px;
+}
+
+img.pic6 {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+    
+img.pic4{
+    margin-top: 15px;
+    margin-right: 4px;
+}
+
+img.pic5{
+    margin-top: 25px;    
+}
+    
+ 
+   
+}/*手機版到此結束*/
+
+
+
+/*電腦版設定開始*/
+@media only screen and (min-width: 1180px) {
+
+/*設定Header區塊*/
+header {
+    width: auto;
+    margin: 0 auto;
+}
+    
+/*設定Header Nav瀏覽圖片*/
+nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+    
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+}
+    /*清除list選單預設的屬性與寬度*/
+    
+nav li {
+    margin-top: 0;
+    margin-right: 20px;
+    } 
+
+nav img{
+    float: right;
+    width: auto;
+    height: auto;
+    margin-right: 15px;
+}
+
+/*設定LOGO*/
+nav img.logo{
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 70px;
+}
+
+/*設定banner圖片*/    
+div.banner-out{
+    position: relative;
+}
+    
+
+img.banner-pic{
+    max-height: 100%;  
+    max-width: 100%; 
+    margin: 0;
+    opacity: 0.95;
+}
+    
+img.banner-pic:hover{
+    opacity: 0.80;
+} 
+    
+    
+div.content{
+    width: 1180px;
+    margin: 0 auto;    
+}
+    
+/*設定Main區塊*/
+main {
+    margin: 0;
+    height: 530px;   
+}
+    
+main img {
+    float: left;
+    max-height: 100%;  
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    margin-left: 15px;
+    } 
+    
+main aside {
+    float: right;
+    width: auto;
+    height: auto;
+    width: 400px;
+    height: 426px; 
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    margin-right: 15px;
+}
+
+main aside:hover{
+    background-color: rgba(0,0,0,0.04);
+}
+
+aside h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 36px;
+    font-family: 'Baloo 2', cursive;
+}
+    
+aside p.introduce{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 550;  
+}
+    
+aside p.price{
+    font-size: 18px;
+    line-height: 25px; 
+}
+
+
+h4.album{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;    
+}
+
+
+/*設定Section1區塊*/
+section{
+    position: relative;
+    height: 383px;
+    margin-bottom: 5px;
+
+}
+
+/*設定Section 1區塊*/
+div.sec1{
+    margin: 0;
+    width: 575px; 
+}
+    
+img.pic1{
+    float: left;
+    margin-right: 6px;
+}
+
+img.pic3{
+    float: left;
+    margin-right: 5px;
+}
+
+img.pic2{
+    float: right;
+}
+    
+h4.photos{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px; 
+    font-family: 'Baloo 2', cursive;
+}
+
+/*設定Section 2區塊*/
+div.sec2{
+    margin: 0;
+    width: 575px; 
+}
+
+img.pic6{
+    float: right;
+    margin-right:24px;
+}
+    
+img.pic4{
+    float: left; 
+}
+
+img.pic5{
+    float: right;
+}
+
+/*設定Footer區塊*/
+footer {
+    text-align: center; /*左右居中*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: darkgray; 
+    font-size: 14px;
+    font-family: 'Baloo 2', cursive;
+}
+    
+}/*電腦版到此結束*/
+
+
+
+
+
+
